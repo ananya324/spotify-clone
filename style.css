@@ -1,0 +1,439 @@
+:root {
+    background-color: black;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+
+}
+
+
+.left {
+    width: 27vw;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    /* Disable horizontal scroll */
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 12px;
+    color: white;
+
+}
+
+.right {
+    width: 73vw;
+    height: max-content;
+    padding-bottom: 80px;
+    /* gives room for fixed playbar */
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+}
+
+.llogos {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.home {
+    background-color: rgb(63, 62, 62);
+    padding: 9px;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+}
+
+.home:hover {
+    transform: scale(1.1);
+
+}
+
+.search {
+    background-color: rgb(63, 62, 62);
+    padding: 9px;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+
+}
+
+.search:hover {
+    transform: scale(1.1);
+
+}
+
+.rlogos {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+}
+
+
+.signin {
+    background-color: black;
+    border: 0;
+    color: rgb(179, 179, 179);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+}
+
+.login {
+    padding: 13px 24px 13px 24px;
+    font-weight: 700;
+    border-radius: 27px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.2s ease;
+}
+
+.login:hover {
+    transform: scale(1.1);
+}
+
+.signin:hover {
+    transform: scale(1.1);
+}
+
+.lib {
+    justify-content: space-between;
+
+}
+
+.create {
+    padding: 12px;
+    padding-top: 1px;
+    background-color: rgb(37, 37, 37);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.button {
+    padding: 10px 14px 10px 14px;
+    font-weight: 700;
+    border-radius: 27px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer a {
+    color: rgb(142, 140, 140);
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+.footer div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.footer {
+    padding: 17px;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;       /* Enables horizontal scroll */
+    overflow-y: hidden;     /* Prevent vertical scroll */
+    gap: 25px;
+    padding: 12px 24px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.playlist .card {
+    width: 150px;
+    background-color: rgb(29, 29, 29);
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+    width: 150px;
+
+}
+
+.card p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(179, 179, 179);
+    margin: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.card h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    
+}
+
+
+.card:hover {
+    background-color: rgb(56, 55, 55, 0.6);
+
+}
+
+.card:hover .play {
+    visibility: visible;
+}
+
+.play {
+    position: absolute;
+    bottom: 66px;
+    right: 13px;
+    visibility: hidden;
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+
+}
+
+.playbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+    /* or whatever height you want */
+    width: 100%;
+    z-index: 100;
+    /* Make sure it stays above other content */
+    padding-top: 2px;
+
+}
+
+.newsongs {
+    padding: 12px;
+    padding-top: 1px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding-bottom: 1px;
+}
+
+.newsongs h3 {
+    font-size: 15px;
+}
+
+.newsongs ul li {
+    font-size: 13px;
+    list-style: none;
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 9px 0;
+    border: 1px;
+    margin: 9px 0;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(64, 64, 64);
+    position: relative;
+
+}
+
+.newsongs ul {
+    padding: 12px;
+
+}
+
+.seekbar {
+    height: 2px;
+    width: 40%;
+
+    background-color: rgb(219, 219, 219);
+    position: absolute;
+    bottom: 10px;
+    left: 54%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border-radius: 23px;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: left 0.5s
+}
+
+.songbuttons img {
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    /* Don't shrink the buttons */
+
+}
+
+.songinfo {
+    color: white;
+    margin: 2px;
+    font-weight: 700;
+    font-family: helvetica;
+    font-size: 14px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    /* Adjust as needed */
+
+}
+
+.range input[type="range"] {
+    width: 90px;
+    /* change width as needed */
+    height: 8px;
+
+
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.timevol {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.volume {
+    display: flex;
+    height: 2px;
+    cursor: pointer;
+
+}
+
+.hello {
+    display: flex;
+    gap: 122px;
+    align-items: center;
+}
+
+.songtime {
+    color: white;
+    font-weight: 700;
+    font-family: helvetica;
+    font-size: 14px;
+    flex-shrink: 0;
+    /* Don't let the time shrink or move */
+    width: 15px;
+    /* or 100px — wide enough for "00:00 / 00:00" */
+    text-align: right;
+    white-space: nowrap;
+
+
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    /* This will increase as the song plays */
+    background-color: rgb(75, 229, 75);
+    /* green progress */
+    border-radius: 6px;
+}
+
+li:hover .hehe circle {
+    fill: rgb(75, 229, 75);
+}
+
+.hamburger {
+    cursor: pointer;
+    margin: 10px;
+    display: none;
+}
+
+.artistscontainer{
+    padding-left: 24px;
+    display: flex;
+    gap: 25px;
+    
+
+}
+
+.artists img{
+    padding: 1px;
+   
+    width: 155px;
+    /* make sure width == height */
+    height: 155px;
+    object-fit: cover;
+    /* ensures image covers the circle nicely */
+    border-radius: 50%;
+    /* turns square into circle */
+    
+    
+}
+.artists{
+    width: 152px;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.artists h2{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+
+}
+.artists p{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(179, 179, 179);
+    margin: 5px;
+    
+
+}
+.artists:hover{
+    background-color: rgb(46, 46, 46);
+}
+
+
+
+

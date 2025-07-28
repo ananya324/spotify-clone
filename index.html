@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player:Music for web </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="nav flex ">
+        <!-- Inline white hamburger icon -->
+        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+
+
+        <div class="llogos">
+            <img class="logo" src="icons/logo.svg" alt="logo" height="35px">
+            <img class="home" src="icons/home.svg" alt="" height="28px">
+            <img class="search" src="icons/search.svg" alt="" height="28px">
+        </div>
+        <div class="rlogos">
+            <button class="signin font">Sign up</button>
+            <button class="login font">Log in</button>
+        </div>
+    </div>
+    <div class="container flex font">
+        <div class="left border bg-grey">
+            <span class="flex lib">
+                <h4>Your Library</h4>
+                <img src="icons/plus.svg" alt="">
+            </span>
+            <div class="newsongs ">
+                <h3>Song List</h3>
+                <ul>
+                </ul>
+            </div>
+            <div class="space"></div>
+
+            <div class="create border">
+                <h4>Create your first playlist</h4>
+                <p class="fs">it's easy, we'll help you</p>
+                <button class="button">Create playlist</button>
+            </div>
+            <div class="space"></div>
+            <div class="create border">
+                <h4>Let's find some podcasts to follow</h4>
+                <p class="fs">We'll keep you updated on new episodes </p>
+                <button class="button">Browse podcasts</button>
+            </div>
+            <footer class="footer">
+                <div class="sc-bmzYkS iLJbxB">
+                    <div class="sc-jsJBEP iCKNKM"><a href="https://www.spotify.com/in-en/legal/"
+                            class="e-9960-text-link e-9960-baseline e-9960-overflow-wrap-anywhere encore-internal-color-text-subdued e-9960-text-link--standalone sc-bXCLTC ekjVst"
+                            data-encore-id="textLink" id=""><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gBYjgG">Legal</span></a></div>
+                    <div class="sc-jsJBEP iCKNKM"><a href="https://www.spotify.com/in-en/safetyandprivacy/"
+                            class="e-9960-text-link e-9960-baseline e-9960-overflow-wrap-anywhere encore-internal-color-text-subdued e-9960-text-link--standalone sc-bXCLTC ekjVst"
+                            data-encore-id="textLink" id=""><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gBYjgG">Safety &amp; Privacy Center</span></a>
+                    </div>
+                    <div class="sc-jsJBEP iCKNKM"><a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                            class="e-9960-text-link e-9960-baseline e-9960-overflow-wrap-anywhere encore-internal-color-text-subdued e-9960-text-link--standalone sc-bXCLTC ekjVst"
+                            data-encore-id="textLink" id=""><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gBYjgG">Privacy Policy</span></a></div>
+                    <div class="sc-jsJBEP iCKNKM"><a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                            class="e-9960-text-link e-9960-baseline e-9960-overflow-wrap-anywhere encore-internal-color-text-subdued e-9960-text-link--standalone sc-bXCLTC ekjVst"
+                            data-encore-id="textLink" id=""><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gBYjgG">Cookies</span></a></div>
+                    <div class="sc-jsJBEP iCKNKM"><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                            class="e-9960-text-link e-9960-baseline e-9960-overflow-wrap-anywhere encore-internal-color-text-subdued e-9960-text-link--standalone sc-bXCLTC ekjVst"
+                            data-encore-id="textLink" id=""><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gBYjgG">About Ads</span></a></div>
+                    <div class="sc-jsJBEP iCKNKM"><a href="https://www.spotify.com/in-en/accessibility/"
+                            class="e-9960-text-link e-9960-baseline e-9960-overflow-wrap-anywhere encore-internal-color-text-subdued e-9960-text-link--standalone sc-bXCLTC ekjVst"
+                            data-encore-id="textLink" id=""><span data-encore-id="type"
+                                class="Type__TypeElement-sc-goli3j-0 gBYjgG">Accessibility</span></a></div>
+                </div>
+            </footer>
+        </div>
+        <div class="right border bg-grey">
+            <div class="playlist">
+                <h2 class="color">Spotify Playlists</h2>
+                <div class="cardcontainer">
+                    <div data-folder="cs" class="card">
+                        <div class="play">
+                            <svg width="52" height="52" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green Circle -->
+                                <circle cx="50" cy="50" r="48" fill="#1ED760" />
+
+                                <!-- Black Play Triangle -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt="">
+
+
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness! </p>
+                    </div>
+                    <div data-folder="ncs" class="card">
+                        <div class="play">
+                            <svg width="52" height="52" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green Circle -->
+                                <circle cx="50" cy="50" r="48" fill="#1ED760" />
+
+                                <!-- Black Play Triangle -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+
+                        </div>
+
+                        <img src="img/mainchar.jpeg" alt="">
+
+                        <div class="info">
+                            <h2>Main character Mix!!</h2>
+                            <p>Hits to boost your mood and fill you with happiness! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="color">Popular artists</h2>
+            <div class="artistscontainer">
+                <div class="artists">
+                    <img src="img/arijit singh.jpeg" alt="">
+                    <div class="ainfo">
+                        <h2>Arijit Singh</h2>
+                        <p>Artist</p>
+                    </div>
+                </div>
+
+                <div class="artists">
+                    <img src="img/pritam.jpg" alt="">
+                    <div class="ainfo">
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                </div>
+                <div class="artists">
+                    <img src="img/ARrehman.jpg" alt="">
+                    <div class="ainfo">
+                        <h2>A.R. Rahman</h2>
+                        <p>Artist</p>
+                    </div>
+                </div>
+
+                <div class="artists">
+                    <img src="img/atif.jpeg" alt="">
+                    <div class="ainfo">
+                        <h2>Atif Aslam</h2>
+                        <p>Artist</p>
+                    </div>
+                </div>
+
+                    <div class="artists">
+                    <img src="img/sonujigar.jpeg" alt="">
+                    <div class="ainfo">
+                        <h2>Sachin Jigar</h2>
+                        <p>Artist</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="progress"></div> <!-- this part will be colored -->
+                    <div class="circle"></div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo"></div>
+                    <div class="songbuttons">
+                        <img id="previous" src="icons/prev.svg" alt="">
+                        <img id="play" src="icons/playbutton.svg" alt="">
+                        <img id="next" src="icons/next.svg" alt="">
+                    </div>
+
+                    <div class="timevol">
+
+                        <div class="songtime"></div>
+
+                        <div class="volume"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                height="24" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <!-- Speaker -->
+                                <path d="M5 9v6h4l5 5V4l-5 5H5z" />
+
+                                <!-- Sound wave 1 -->
+                                <path d="M16.5 8.5a5 5 0 0 1 0 7" />
+
+                                <!-- Sound wave 2 -->
+                                <path d="M19 6a9 9 0 0 1 0 12" />
+                            </svg>
+                            <div class="range">
+                                <input type="range" name="volume" min="0" max="100" value="50">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

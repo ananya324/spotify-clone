@@ -1,0 +1,241 @@
+.bg-grey {
+  background-color: rgb(22, 22, 22);
+}
+
+.border {
+  margin: 2px;
+  border-radius: 7px;
+}
+
+.flex {
+  display: flex;
+}
+
+.font {
+  font-style: normal;
+  font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+.fs {
+  font-size: 13px;
+  font-weight: 700;
+
+}
+
+.space {
+  padding: 10px;
+}
+
+.color {
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  font-weight: 800;
+}
+
+.hehe {
+  padding-left: 32px;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+}
+
+@media (max-width: 1400px) {
+  .left {
+    position: absolute;
+    left: -100%;
+    transition: all 0.3s;
+    z-index: 1;
+    width: 339px;
+  }
+
+  .right {
+    width: 100vw;
+  }
+
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .playbar {
+    width: 100%;
+
+
+  }
+
+  .seekbar {
+    left: 50%;
+  }
+
+
+
+  .play {
+    position: absolute;
+    bottom: 93px;
+    right: 18px;
+
+  }
+
+  .songtime {
+    width: 45px;
+  }
+
+  .card:hover {
+    background-color: rgb(56, 55, 55, 0.6);
+  }
+
+  .card:hover .play {
+    visibility: visible;
+  }
+
+  
+
+  .card {
+    width: 150px;
+    background-color: rgb(29, 29, 29);
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px;
+    height: 4px;
+  }
+
+  /* Track: background behind the thumb */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  /* Thumb: the scroll handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 11px;
+  }
+
+  /* On hover: slightly lighter thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+  }
+
+  .play {
+    position: absolute;
+    bottom: 66px;
+    right: 13px;
+    visibility: hidden;
+  }
+  .artistscontainer{
+  overflow-x: scroll;
+}
+
+
+}
+
+@media (max-width:600px) {
+  .volume {
+    display: none;
+  }
+
+  .songinfo {
+    color: white;
+    margin: 2px;
+    font-weight: 700;
+    font-family: helvetica;
+    font-size: 14px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    /* Adjust as needed */
+
+  }
+
+  .songtime {
+    color: white;
+    font-weight: 700;
+    font-family: helvetica;
+    font-size: 14px;
+    flex-shrink: 0;
+    /* Don't let the time shrink or move */
+    width: 85px;
+    /* or 100px — wide enough for "00:00 / 00:00" */
+    text-align: right;
+    white-space: nowrap;
+
+  }
+
+  .cardcontainer {
+    overflow-x: scroll;
+    display: flex;
+
+  }
+
+  .right {
+    height: max-content;
+  }
+
+  .playlist .card {
+    width: 150px;
+    background-color: rgb(29, 29, 29);
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+  }
+ 
+.card img {
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+    width: 150px;
+
+}
+
+.card p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(179, 179, 179);
+    margin: 5px;
+
+
+}
+
+.card h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+}
+.artistscontainer{
+  overflow-x: scroll;
+}
+
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track: background behind the thumb */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Thumb: the scroll handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+/* On hover: slightly lighter thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
