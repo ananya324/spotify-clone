@@ -12,7 +12,7 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs(folder) {
     currFolder = folder;
 
-    let response = await fetch(`/${folder}/`);
+    let response = await fetch(`/spotify-clone/${folder}/`);
     let html = await response.text();
 
     let div = document.createElement("div");
@@ -28,14 +28,14 @@ async function getSongs(folder) {
     for (let song of songs) {
         songUL.innerHTML += `
         <li>
-            <img class="invert" src="icons/music.svg" alt="">
+            <img class="invert" src="/spotify-clone/icons/music.svg" alt="">
             <div class="info">
                 <div>${song.replaceAll("%20", " ")}</div>
                 <div>Spotify</div>
             </div>
             <div class="playnow">
                 <span>Play Now</span>
-                <img class="invert" src="icons/play.svg" alt="">
+                <img class="invert" src="/spotify-clone/icons/play.svg" alt="">
             </div>
         </li>`;
     }
@@ -48,14 +48,14 @@ async function getSongs(folder) {
 }
 
 function playMusic(track, pause = false) {
-    currentSong.src = `/${currFolder}/` + track;
+    currentSong.src = `/spotify-clone/${currFolder}/` + track;
     if (!pause) currentSong.play();
     document.querySelector(".songinfo").innerHTML = decodeURI(track);
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
 }
 
 async function displayAlbums() {
-    let response = await fetch(`/songs/`);
+    let response = await fetch(`/spotify-clone/songs/`);
     let html = await response.text();
 
     let div = document.createElement("div");
@@ -69,7 +69,7 @@ async function displayAlbums() {
         if (e.href.includes("/songs/")) {
             let folder = e.href.split("/").filter(Boolean).pop();
 
-            let infoResponse = await fetch(`/songs/${folder}/info.json`);
+            let infoResponse = await fetch(`/spotify-clone/songs/${folder}/info.json`);
             let info = await infoResponse.json();
 
             cardContainer.innerHTML += `
@@ -79,7 +79,7 @@ async function displayAlbums() {
                             <path d="M11.596 8.697l-6.363 3.692A.5.5 0 0 1 4 11.942V4.058a.5.5 0 0 1 .757-.424l6.363 3.692a.5.5 0 0 1 0 .871z"/>
                         </svg>
                     </div>
-                    <img src="/songs/${folder}/cover.jpg" alt="">
+                    <img src="/spotify-clone/songs/${folder}/cover.jpg" alt="">
                     <h2>${info.title}</h2>
                     <p>${info.description}</p>
                 </div>`;
